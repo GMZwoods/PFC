@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellTea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script  src="script.js" defer></script>
+    <script defer src="https://kit.fontawesome.com/ac5d49e11b.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+    <!-- HEADER -->
+    <header id="webpageTop">
+      <nav class="navbar navbar-expand-md navbar-dark" id="navbarTop">
+        <div class="container-fluid lg">
+
+          <a class="navbar-brand" href="index.html">
+            <img src="img/reshot-icon-spa-and-wellness-center-X357AM6BWF.svg" alt="Welltea logo">            
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <ul class="navbar-nav mb-2 mb-md-0 d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">Nos Produits</a>
+              </li>
+              <li >
+                <a class="nav-link" href="#scrollspyHeading2">L'équipe</a>
+              </li>
+            </ul>
+              <div class="contact nav-item d-flex justify-content-center align-items-center ms-2">
+                <!--******************************************************************************* boutton contact + modal -->
+                <div class="nav-item">
+                  <button type="button" class="Button-Contact nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <span>Nous joindre</span>
+                  </button>
+                </div>
+              </div>  
+              <div class="d-flex justify-content-center align-items-center mx-auto">
+                <a href="index.html" class="companyName d-inline">WELLTEA</a>
+              </div>
+                <!-- ************************************************************************************ Modal for Contact us-->
+                <div class="modalView modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="contactUsLabel">Écrivez Nous!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body contactUs">
+                        <form novalidate>
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Nom :</label>
+                            <input type="text" class="form-control" id="userNameContactUs" placeholder="Nom">
+                          </div>
+                          <span class="inputError1"></span>
+                          <div class="mb-3">
+                            <label for="emailAdress" class="form-label">Courriel</label>
+                            <input type="email" class="form-control" id="emailAdressContactUs" placeholder="Courriel">
+                          </div>
+                          <span class="inputError2"></span>
+                          <div class="mb-3">
+                            <label for="validationTextarea" class="form-label">Votre message!</label>
+                            <textarea class="form-control" id="textContactUs" placeholder="commentaires, questions , suggestions..."></textarea>
+                          </div>                  
+                          <span class="inputError3"></span>
+                          <div class="mb-3">
+                            <button class="btn btn-primary" id="contactUs">Envoyer</button>
+                            <span class="inputValid"></span>
+                          </div>
+                        </form>                  
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+          <div class="basket navbar-nav me-6 d-flex justify-content-end align-items-center">
+            <div class="nav-link me-1">
+                <button class="LoginSignUP btn" data-bs-toggle="modal" data-bs-target="#LogIn"><span>Se Connecter</span></button>
+            </div>
+            <div class="nav-link me-1">
+                <button class="LoginSignUP btn" data-bs-toggle="modal" data-bs-target="#SignUp"><span>S'enregistrer</span></button>
+            </div> 
+        </div>
+        <div class="shoppingCart me-5">
+          <button type="button" id="cart" class="basketBtn nav-item d-flex justify-content-center align-items-center text-decoration-none" data-bs-toggle="modal" data-bs-target="#checkOut">
+            <i class="fa-solid fa-basket-shopping"></i><span class="itemCount"></span>
+          </button>
+        </div>
+            <!-- SIGNUP MODAL START -->
+<div class="modal fade" id="SignUp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modalView">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="SignUpLabel">Inscrivez-vous pour créer votre profil !</h1> 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-body">
+        
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+        <h1 class="fw-bold mb-0 fs-2">Inscrivez-vous gratuitement !</h1>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="signUpEmail" placeholder="name@example.com">
+            <label for="floatingInput">Adresse Courriel</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="signUpPassword" placeholder="Password">
+            <label for="floatingPassword">Mot de passe</label>
+          </div>
+          <button class="connexion w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">S'enregistrer</button>
+          <small class="text-body-secondary">En cliquant sur "Inscription", vous acceptez les conditions d'utilisation.</small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Ou utilisez un service tiers.</h2>
+          <button class="Twitter w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+            <i class="fa-brands fa-x-twitter me-1"></i><span>Inscrivez-vous avec Twitter</span>
+          </button>
+          <button class="Facebook w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+            <i class="fa-brands fa-facebook me-1"></i><span>Inscrivez-vous avec Facebook</span>
+          </button>
+          <button class="Instagram w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+            <i class="fa-brands fa-instagram me-1"></i><span>Inscrivez-vous avec Instagram</span>
+          </button>
+          <button class="TikTok w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+            <i class="fa-brands fa-tiktok me-1"></i><span>Inscrivez-vous avec Tik Tok</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ******************************************************************************************** SIGNUP MODAL END -->
+<!-- LOGIN MODAL START -->
+<div class="modal fade" id="LogIn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modalView">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="LogInLabel">Connectez-vous à votre profil !</h1> 
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+      <div class="modal-body">
+
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <h1 class="fw-bold mb-0 fs-2">Se connecter</h1>
+          </div>
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-3" id="floatingInputEmail" placeholder="name@example.com">
+                <label for="floatingInput">Addresse Courriel</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Mot de passe</label>
+              </div>
+              <button class="connexion w-100 mb-2 btn btn-lg rounded-3" type="submit">Connexion</button>
+              <hr class="my-4">
+              <h2 class="fs-5 fw-bold mb-3">Connectez-vous en utilisant un service tiers.</h2>
+              <button class="Twitter w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+                <i class="fa-brands fa-x-twitter me-1"></i><span> Connectez-vous avec Twitter</span>
+              </button>
+              <button class="Facebook w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                <i class="fa-brands fa-facebook me-1"></i><span> Connectez-vous avec Facebook</span>
+              </button>
+              <button class="Instagram w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                <i class="fa-brands fa-instagram me-1"></i><span> Connectez-vous avec Instagram</span>
+              </button>
+              <button class="TikToK w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                <i class="fa-brands fa-tiktok me-1"></i><span> Connectez-vous avec Tik Tok</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- ******************************************************************************************** LOGIN MODAL END  -->
+            <!-- BASKET MODAL HERE -->
+            <div class="modal fade" id="checkOut" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modalView modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="shoppingCartLabel">Vos Achats</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="#products">
+                    
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                      <span class="text-primary">Mon panier</span>
+                      <span class="badge bg-primary rounded-pill cartItemsCount"></span>
+                    </h4>
+                    <ul class="list-group mb-3" id="cartList"></ul>
+                    <div class="list-group-item d-flex justify-content-between">
+                      <span id="total">Total (CA$)</span>
+                    </div>
+                    <form class="card p-2">
+                      <button type="button" class="btn btn-secondary" id="clearCart">Annulé</button>
+                      <button type="submit" class="checkoutBtn btn my-3">Finaliser la commande</button>
+                    </form>         
+                  </div>                      
+                </div>
+              </div>
+            </div>
+</header>
+    
+    <!-- ******************************************************************************************** BASKET MODEL END -->
+
+    <div id="myCarousel" class="carousel slide pt-12" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active indicators" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="indicators" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="indicators"></button>
+      </div>
+  
+      <div class="custom carousel-inner">
+        <div class="carousel-item">
+          <div class="bg-carousel">
+            <img class="bd-placeholder-img" src="img/annie-spratt-coumpound.jpg" aria-label="Photo by Brooke Lark on Unsplash" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          </div>
+          <div class="container">
+            <div class="container carousel-caption text-start">
+              <h1>Créez votre bougie parfaite : choisissez vos couleurs, parfums et cire pour une expérience véritablement personnalisée.</h1>
+                <p>Libérez votre créativité : concevez votre bougie de rêve avec d'innombrables combinaisons de couleurs et de parfums !</p>
+                <p><a class="headline-btn btn btn-lg" href="#">Apprenez-en Plus!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="bg-carousel">
+            <img class="bd-placeholder-img" src="img/candles1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          </div>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Vivez un voyage de saveurs, de tradition et de bien-être à chaque mois!</h1>
+              <p>Découvrez nos forfaits mensuels avec une variété de produits exceptionnels, livrés directement à votre porte !</p>
+              <p><a class="headline-btn btn btn-lg" href="">S'inscrire Dès Maintenant!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="bg-carousel">
+            <img class="bd-placeholder-img" src="img/christin-hume-make-up.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          </div>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              
+              <h1>Une beauté engagée : des cosmétiques véganes et sans cruauté, conçus avec la sagesse ancestrale et les techniques modernes pour un éclat authentique.</h1>
+                <p>Belles de la tête aux pieds, tout comme vous l'êtes</p>
+                <p><a class="headline-btn btn btn-lg" href="#">Parcourir La Gallerie</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="NextPrevious arrows carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="NextPrevious arrows carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--  Up Button   -->
+
+<div class="upBtn fixed-bottom mb-10 me-4"  data-bs-spy="scroll" data-bs-target="#webpageTop" data-bs-root-margin="0px 0px -40%">
+      <div class="float-end">
+        <a href="#webpageTop">
+          <Button class="UPARROW btn"><i class="Return fa-solid fa-arrow-up-long"></i></Button>
+        </a>
+      </div>
+</div> 
+    <!-- Up Button end  -->
+
+  <div class="marketing container my-12">
+
+    <h2 class="pb-2 border-bottom d-flex justify-content-center">Explorer Nos Services</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      
+      <a href="#">
+        <div class="col">
+          <div class="Teahouse card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="p-10 d-flex justify-content-center">La Maison De Thé</h3>
+            </div> 
+            
+          </div>
+        </div>
+      </a>
+      
+      <a href="#">
+        <div class="=col">
+        <div class="CandleMaker card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <div class="d-flex flex-column">
+            <h3 class="p-10 d-flex justify-content-center">Le Cirier</h3>
+          </div>
+        </div>
+      </div> </a>
+      
+      <a href="#">
+        <div class="col">
+          <div class="Gallery card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="p-10 d-flex justify-content-center">La Gallerie Beauté</h3>
+            </div>
+          </div>
+        </div>
+      </a>
+      
+    </div>
+    <!-- our product section -->
+    <div class="itemProducts container-fluid d-flex justify-content-center mb-8 py-6" data-bs-spy="scroll" data-bs-target="#navbarTop" data-bs-root-margin="0px 0px -40%" id="scrollspyHeading1">
+      <h1>Nos Produits</h1>
+    </div>
+    <section class="products container">       
+        <div id="productsContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        </div>
+    </section>
+  </div>
+
+  <div class="itemProducts container d-flex justify-content-center mb-8 py-6" data-bs-spy="scroll" data-bs-target="#navbarTop" data-bs-root-margin="0px 0px -40%" id="scrollspyHeading1">
+    <h1>Notre Équipe</h1>
+  </div>
+<!-- L'équipe -->
+<div class="Team container d-flex justify-content-center align-content-center" id="scrollspyHeading2">
+  <div class="row container">
+    <div class="col container">
+      <img class="rounded-circle" width="150" height="150" src="/img/people/girl3.jpg" role="img" aria-label="Placeholder" focusable="false"></img>
+      <h2 class="fw-normal">Marie-Anne Botelo</h2>
+      <p>"Passionnée de beauté et toujours à la recherche des dernières tendances, je suis ici pour partager avec vous mes découvertes cosmétiques et mes astuces bien-être. Sur mes réseaux, vous trouverez des produits que j'aime, des routines de soin et des conseils pour sublimer votre éclat naturel. Rejoignez-moi pour un voyage de beauté, éthique et moderne! #welltea</p>
+      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    </div>
+    <div class="col container">
+      <img class="rounded-circle" width="150" height="150" src="/img/people/man1.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+      <h2 class="fw-normal">Edwige Cornell</h2>
+      <p>Étudiant en naturopathie et passionné par l'art de la fabrication de bougies artisanales, je combine mes connaissances en bien-être naturel avec la création de produits qui apportent une ambiance apaisante à votre quotidien. Chaque bougie que je fabrique est inspirée par la nature, avec des ingrédients soigneusement choisis pour une expérience de détente authentique. Laissez-vous emporter par la chaleur et l'harmonie que mes bougies apportent à votre espace.</p>
+      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    </div>
+    <div class="col container">
+      <img class="rounded-circle" width="150" height="150" src="/img/people/girl4.jpg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
+      <h2 class="fw-normal">Yuan-li Chen-Sauvé</h2>
+      <p>Passionnée de thé depuis mon enfance, ayant grandi dans une famille productrice de thé, j'apporte mon expertise pour créer des mélanges uniques chez WellTea. Chaque thé est une fusion de tradition et de savoir-faire, offrant une expérience authentique et riche en saveurs. Je suis ravie de partager avec vous le goût et l'histoire de chaque feuille, soigneusement sélectionnée pour éveiller vos sens et apporter un moment de bien-être.</p>
+      <p><a class="btn btn-secondary" href="#">View details »</a></p>
+    </div>
+  </div>
+
+</div>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid mt-12">
+    <div class="container d-flex justify-content-between">
+      
+      <ul class="nav container-fluid d-flex justify-content-center">
+        <li class="nav-item ps-2"><a href="https://www.facebook.com/login/&ved=2ahUKEwjO8M2s2--LAxWSkokEHRqRIP4QjBB6BAgkEAE&usg=AOvVaw2NEj8NwnxhOue64pSijk7e" class="nav-link px-2 text-body-secondary"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="nav-item ps-2"><a href="https://www.instagram.com/" class="nav-link px-2 text-body-secondary"><i class="fa-brands fa-instagram"></i></a></li>
+        <li class="nav-item ps-2"><a href="https://www.tiktok.com/" class="nav-link px-2 text-body-secondary"><i class="fa-brands fa-tiktok"></i></a></li>
+        <li class="nav-item ps-2"><a href="https://x.com/" class="nav-link px-2 text-body-secondary"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li class="nav-item ps-2"><a href="https://www.snapchat.com/" class="nav-link px-2 text-body-secondary"><i class="fa-brands fa-snapchat"></i></a></li>
+      </ul>
+      <div class="PrivaTerms container d-inline-block justify-content-center align-items-center">
+        <p>© 2025 WellTea.Org  <a href="/webpages/privacy&terms.html" class="ps-5">Confidentialité</a> & <a href="/webpages/privacy&terms.html">Conditions</a></p></div>
+    </div>
+    </div>
+    
+  </footer>
+</body>
+</html>
