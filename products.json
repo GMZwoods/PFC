@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Vitali-thé",
+        "price": 8,
+        "descriptionSum": "Un thé vivifiant inspiré des forêts québécoises.",
+        "description": "Un élixir vivifiant inspiré des forêts québécoises. Ce thé artisanal, confectionné à la main, marie la fraîcheur des feuilles de thé des bois du Québec à une douceur naturelle exquise. Parfait pour dynamiser vos journées avec une touche de nature pure.",
+        "image": "img/content-pixie-m-gqDRzbJLQ-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Sweettea",
+        "price": 6,
+        "descriptionSum": "L’alliance parfaite entre gourmandise et bien-être.",
+        "description": "L’alliance parfaite entre gourmandise et bien-être. Ce mélange unique de thé des bois québécois et d’ingrédients soigneusement sélectionnés vous offre une infusion douce et naturellement sucrée. Un moment de réconfort à chaque gorgée.",
+        "image": "img/gaelle-marcel-UOJeTKFwoJc-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bonheur Canelle",
+        "price": 12,
+        "descriptionSum": "Faites de chaque instant un moment cosy.",
+        "description": "Faites de chaque instant un moment cosy avec Bonheur Cannelle. Son parfum épicé et légèrement sucré rappelle les douceurs de l’automne et les soirées au coin du feu. Idéale pour apporter une touche chaleureuse à votre intérieur.",
+        "image": "img/photo_tatti-WsrDW2W5n5c-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Vanillorama - Chandelles",
+        "price": 6.99,
+        "descriptionSum": "Une ambiance chaleureuse et enveloppante.",
+        "description": "Plongez dans une ambiance chaleureuse et enveloppante avec Vanillorama. Cette chandelle artisanale diffuse un parfum doux et réconfortant de vanille, parfait pour créer une atmosphère apaisante et gourmande. Laissez-vous transporter par cette fragrance délicate et intemporelle.",
+        "image": "img/hanna-balan-candles.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Crème de visage au thé vert",
+        "price": 8.79,
+        "descriptionSum": "Un soin inspiré des traditions ancestrales.",
+        "description": "Inspirée des traditions ancestrales, cette crème associe les vertus du thé à des ingrédients naturels utilisés par les Premières Nations. Une formule nourrissante qui hydrate, protège et illumine la peau, en harmonie avec la sagesse des peuples autochtones.",
+        "image": "img/uliana-kopanytsia-BHOv_mdf4Bo-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Neauthy, crème de jour",
+        "price": 12.99,
+        "descriptionSum": "Une hydratation en toute légèreté.",
+        "description": "Une hydratation en toute légèreté pour les peaux sensibles. Conçue pour apaiser et protéger, cette crème de jour hypoallergénique nourrit votre peau sans l’alourdir. Parfaite pour un teint frais et éclatant, jour après jour.",
+        "image" : "img/neauthy-skincare-8jg7vumdUlU-unsplash.jpg"
+    }
+]
+
