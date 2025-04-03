@@ -1,0 +1,467 @@
+// project base
+body{
+    background-color: $body-bg-colour;
+}
+//project fonts (Custom fonts) 
+@font-face {
+    font-family: 'font-ASENINE';
+    src: url(../fonts/ASENINE_.ttf);
+}
+@font-face {
+    font-family: 'font-ASENINE2';
+    src: url(../fonts/ASENST__.ttf);
+}
+@font-face {
+    font-family: 'font-ASENINE3';
+    src: url(../fonts/ASENT___.ttf);
+    
+}
+@font-face {
+    font-family: 'font-ASENINE-Italic';
+    src: url(../fonts/ASENW___.ttf);
+}
+@font-face {
+    font-family: 'font-Effloresce-antique';
+    src: url(../fonts/Effloresce\ Antique.otf);
+}
+@font-face {
+    font-family: 'font-Effloresce-otf';
+    src: url(../fonts/Effloresce.otf);
+}
+@font-face {
+    font-family: 'font-Effloresce-otf-bold';
+    src: url(../fonts/Effloresce\ Bd.otf);
+}
+@font-face {
+    font-family: 'font-Effloresce-otf-italic-bold';
+    src: url(../fonts/Effloresce\ Bd\ It.otf);
+}
+@font-face {
+    font-family: 'font-Effloresce-otf-italic';
+    src: url(../fonts/Effloresce\ It.otf);
+}
+@font-face {
+    font-family: 'font-Tartlers-End';
+    src: url(../fonts/Tartlers\ End.ttf);
+}
+@font-face {
+    font-family: 'font-VoorReg';
+    src: url(../fonts/VoorReg.otf);
+}
+@font-face {
+    font-family: 'font-Flenja';
+    src: url(../fonts/Flenja-Regular.otf);
+}
+
+
+//project font css
+h1, h2, h3, h4, h5, h6{
+    color: $quinary;
+}
+.navbar-brand img{
+    height: 5rem;
+}
+
+p{
+    font-size: $font-size-medium;
+    font-weight: $font-weight-light;
+    color: $primary;
+}   
+//--------------------header css----------------------
+.companyName {
+    font-family: $font-primary;
+    font-size: $font-size-xxlarge;
+    font-weight: $font-weight-bold;
+    color: $body-bg-colour;
+    text-shadow: 2px 2px 2px $primary;
+    text-decoration: none;
+}
+.companyName:hover{
+    color: $quinary;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 4px 4px 4px $body-bg-colour;
+}    
+
+//--------------------navbar css----------------------
+nav{
+    height: 6rem;
+    background-image: linear-gradient(360deg, $secondary, $tertiary);
+    color: $primary;
+    font-family: $font-primary;
+    font-size: $font-size-large;
+}
+
+.custom img{
+    width: 100vw;
+
+}
+.NextPrevious btn{
+    color: $body-bg-colour;
+}
+
+.modalView{
+    font-size: larger;
+    font-family: $font-septenary;
+}
+.modalView h2{
+    color: $quinary;
+}
+
+.connexion{
+    background-image: linear-gradient(360deg, $tertiary, $secondary);
+    border: transparent;
+}
+.connexion:hover{
+    background-image: linear-gradient(360deg, $quinary, $secondary);
+    color: $body-bg-colour;
+    transition: all 0.5s ease-in-out;
+}
+.connexion:active{
+    background-image: linear-gradient($quinary);
+    color: $body-bg-colour;
+    transition: all 0.5s ease-in-out;
+}
+
+.Button-Contact{
+background-color: transparent;
+border: none;
+color: $quinary;
+font-family: $font-primary;
+font-size: $font-size-large;
+font-weight: $font-weight-normal;
+
+}
+
+.Button-Contact:hover{
+    color: $body-bg-colour;
+    transition: all 0.5s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+.basketBtn
+{
+    background-color: transparent;
+    border: none;
+    color: $quinary;
+    font-size: $font-size-medium;
+    
+}
+.basketBtn:hover
+{
+    color: $body-bg-colour;
+    transition: all 0.5s ease-in-out;
+}
+.checkoutBtn
+{
+    background-image: linear-gradient(360deg, $tertiary, $secondary);
+    color: $body-bg-colour;
+    border: transparent;
+}
+.checkoutBtn:hover
+{
+    background-image: linear-gradient(360deg, $secondary, $tertiary);
+    color: $body-bg-colour;
+}
+.checkoutBtn:active
+{
+    background-image: linear-gradient($tertiary);
+    color: $quinary;
+}
+
+.navbar{
+    position: fixed;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: $font-size-medium; 
+}
+
+.navbar img{
+    height: 3rem;
+}
+.navbarSticky .LoginSignUP{
+    font-size: $font-size-medium;
+    
+}
+
+.nav-link{
+    font-size: $font-size-large;
+    font-family: $font-quinary;
+    color: $quinary;
+    
+}
+
+.LoginSignUP{
+    font-size: $font-size-large;
+    color: $quinary;
+    font-weight: bold;
+    
+}
+
+.nav-link:hover{   
+    transition: all 0.5s ease-in-out;
+    text-underline-offset: 0.25rem;
+    text-decoration: underline;
+}
+
+i{
+    height: 1rem;
+    width: 1rem;
+}
+i:hover{
+    height: 1rem;
+    width: 1rem;
+
+}
+
+.search{   font-size: large;
+    border: 1px solid $primary;
+    color: $primary;
+}
+
+.search:hover{
+    background-color: $quinary;
+    color: $body-bg-colour;
+}
+
+nav img{
+    height: fit-content;  
+    background-color: $body-bg-colour;
+    border-radius: 50%;
+}
+
+.basket ul{
+    height: fit-content;
+    list-style-type: none;
+}
+.itemCount{
+    background-color: $quinary;
+    border-radius: 50% 50%;
+    height: 17px;
+    width: 17px;
+    margin-top: 1.5rem;
+    color: $body-bg-colour;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size-small;
+}
+.contact P{
+    color: $primary;
+}
+
+//hero css + carousel css
+.arrows:hover{
+    background-color: $quinary;
+    opacity: 0.25;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.headline-btn{
+    background-color: $secondary;
+    color: #fff;
+}
+//--------------------carousel css----------------------
+.custom img
+{
+    height: 90vh;
+
+}
+
+.bg-carousel {
+    background-color: $body-bg-colour;
+    opacity: 0.85;
+    
+}
+.carousel-caption{
+    position: absolute;
+    top: 1.25rem;
+}
+
+.carousel-caption h1{
+    color: $senary;
+}
+.carousel-caption p{
+    font-size: $font-size-xlarge;
+    font-weight: bold;
+    color: $senary;
+}
+
+.headline-btn{
+    background-image: linear-gradient(360deg, $primary, $secondary);
+    color: $body-bg-colour;
+    border: transparent;
+}
+.headline-btn:hover{
+    background-image: linear-gradient(360deg, $quinary, $primary);
+}
+.headline-btn:active{
+    background-image: linear-gradient(360deg, $quaternary, $primary);
+}
+.headline-btn:hover{
+    background-color: $quinary;
+    color: $body-bg-colour;
+}
+//--------------------products css----------------------
+.itemProducts{
+    background-image: linear-gradient(180deg, $secondary, $tertiary);
+    border-radius: 0% 0% 100% 100%;
+    width: 100%;
+}
+.itemProducts h1{
+    color: $body-bg-colour;
+}
+
+.itemProducts img
+{
+    height: 200px;
+    width: 100%;
+
+}
+//--------------------- featured products css   ----------------------
+.marketing h1,h2,h3 {
+    color: $senary;
+    font-family: $font-septenary;
+    
+}
+
+
+.Teahouse{
+background-image: url(../img/grant-l-i_Jetc-sS1U-unsplash.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+opacity: 0.85;
+}
+.CandleMaker{
+    background-image: url(../img/sebastien-chiron-hdUK8hQPsos-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+}
+.Gallery{
+    background-image: url(../img/rosa-rafael-pxax5WuM7eY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+}
+// Producct section css
+section img{
+    height: 300px;
+    width: 100%;
+    background-image: cover;
+}
+
+.add-to-cart{
+    background-image: linear-gradient(360deg, $quinary, $tertiary);    color: $body-bg-colour;
+
+}
+.add-to-cart:hover{
+    background-image: linear-gradient(360deg, $secondary, $tertiary);
+    color: $body-bg-colour;
+    transition: all 0.2s ease-in-out;
+}
+
+.detailedInfo{
+    background-image: linear-gradient(360deg, $quaternary, $primary);
+    color: $body-bg-colour;
+}
+.detailedInfo:hover{
+    background-image: linear-gradient(360deg, $primary, $quaternary);
+    color: $body-bg-colour;
+    transition: all 0.2s ease-in-out;
+}
+.detailedInfo:active{
+    background-color: $quinary;
+    color: $body-bg-colour;
+    transition: all 0.2s ease-in-out;
+}
+//footer css
+footer{
+    background-image: linear-gradient(180deg, $secondary, $tertiary);
+}
+.PrivaTerms p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $font-size-small;
+}
+
+.PrivaTerms a{
+
+    font-family: $font-primary;
+    font-size: $font-size-large;
+}
+.Team h2{
+    color: $primary;
+}
+.Twitter {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+.Facebook{
+    background-color: #3b5998;
+    color: #fff;
+}
+.Instagram{
+    background-color: #E1306C;
+    color: #fff;
+}
+.TikTok{
+    background-color: #000;
+    color: #fff;
+}
+
+footer a:hover{
+    color: $body-bg-colour;
+    transition: all 0.5s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;    
+}
+
+footer a{
+    font-family: $font-primary;
+    text-decoration: none;
+}
+
+footer .nav-link{
+    color: $primary !important;
+    font-size: $font-size-large !important;   
+}
+
+.UPARROW{
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(360deg, $primary, $secondary);
+    border-color: $body-bg-colour;
+    border-radius: 50% 50%;
+    transition: all 0.5s ease-in-out;
+}
+.UPARROW:hover{
+    background-image: linear-gradient(360deg, $primary, $tertiary);
+    color: $body-bg-colour;
+    transition: all 0.25s ease-in-out;
+    border-color: $body-bg-colour;
+}   
+
+.UPARROW button:active{
+    color: $body-bg-colour;
+    background-image: radial-gradient($primary, $tertiary); 
+    transition: all 0.25s ease-in-out;
+}           
+
+//footer hover css
+footer .nav-link:hover{
+    color: $body-bg-colour !important;
+}
+//privacy and terms css
+.PrivacyTerms
+{
+    background-color: #F5F5DC;
+    font-family: $font-quinary;
+    font-size: $font-size-xlarge;
+    color: #333333;
+}
+
+//Animation css ---------------------------------------------

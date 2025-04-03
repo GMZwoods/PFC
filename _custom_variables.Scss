@@ -1,0 +1,92 @@
+// project colours
+$body-bg-colour: #F3F4EE;
+//top level colours // danie colour pattern
+$primary: #171611;
+$secondary: #c5a98f;
+$tertiary: #966659; 
+$quaternary: #776d4f; 
+$quinary: #423b2b;
+
+
+//middle level colours
+$senary: #f3f4ee; //gabbys colour pattern
+$septenary: #f3f4ee;
+
+//bottom level colours //my colour pattern
+
+// project fonts + font families
+$font-primary: font-ASENINE;
+$font-secondary: font-ASENINE2;
+$font-tertiary: font-ASENINE3;
+$font-quaternary: font-ASENINE-Italic;
+$font-quinary: font-Effloresce-antique;
+$font-senary: font-Effloresce-otf;
+$font-septenary: font-Effloresce-otf-bold;
+$font-octonary: font-Effloresce-otf-italic-bold;
+$font-nonary: font-Effloresce-otf-italic;
+$font-decenary: font-Tartlers-End;
+$font-undenary: font-VoorReg;
+$font-duodenary: font-Flenja;
+
+
+// project font sizes + font weight
+$font-size-xxsmall: 0.6rem;
+$font-size-small: 0.8rem;
+$font-size-medium: 1rem;
+$font-size-large: 2rem;
+$font-size-xlarge: 3rem;
+$font-size-xxlarge: 4rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+//H1-H6 colours
+$h1-color: $primary;
+$h2-color: $secondary;
+$h3-color: $tertiary;
+$h4-color: $quaternary;
+$h5-color: $quinary;
+$h6-color: $primary;
+
+//H1-H6 font sizes
+$h1-size: $font-size-xxlarge;
+$h2-size: $font-size-xlarge;
+$h3-size: $font-size-large;
+$h4-size: $font-size-medium;
+$h5-size: $font-size-small;
+$h6-size: $font-size-xxsmall;
+
+//hover colours
+$hover-primary: $primary;
+$hover-secondary: $secondary;
+$hover-tertiary: $tertiary;
+$hover-quaternary: $quaternary;
+$hover-quinary:  $quinary;
+
+//active colours
+$active-primary: $primary;
+$active-secondary: $secondary;
+$active-tertiary: $tertiary;
+$active-quaternary: $quaternary;
+$active-quinary: $quinary;
+
+//visited colours
+$visited-primary: purple;
+
+
+//Button colours + radius + style
+$button-primary: $primary;
+$button-secondary: $secondary;
+$button-tertiary: $tertiary;
+$button-quaternary: $quaternary;
+$button-quinary: $quinary;
+
+$button-square: 0%;
+$button-rounded: 50%;
+$button-pill: 100px;
+
+//button styles
+$button-right-leaf: 0% 90%;
+$button-left-leaf: 90% 0%;
